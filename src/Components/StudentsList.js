@@ -3,7 +3,7 @@ import Student from './Student'
 
 function StudentsList(props) {
     const list = props.list.map(student =>
-        <Student student={student} />)
+        <Student deleteHandle={props.deleteHandle} student={student} />)
     return (
         <div>
             {list}
